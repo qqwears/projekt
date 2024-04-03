@@ -1,0 +1,50 @@
+.navbar-nav .nav-link {
+    transition: 0.25s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.slider{
+    width: 1460px;
+    height: 805px;
+    overflow: hidden;
+    border: 10px solid #fff;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.bar:hower{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
