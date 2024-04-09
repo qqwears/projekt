@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historické udalosti II. svetovej vojny</title>
+<?php
+include_once "_inc/header.php";
+?>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <link rel="icon" type="image/png" href="img/logo.png" />
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid fixed-top bg-black">
-              <a class="navbar-brand text-white d-flex flex-row align-items-center gap-2" href="Home.html">
-                <img src="img/logo.png" alt="Logo" width="50">
-                História vtedy a teraz
-              </a>
-              <button class="navbar-toggler bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav initialism gap-4 align-items-center justify-content-center d-flex container-fluid">
-                  <a class="nav-link active text-white" aria-current="page" href="Home.html">Home</a>
-                  <a class="nav-link active text-white" aria-current="page" href="O_nas.html">O nas</a>
-                  <a class="nav-link active text-white" aria-current="page" href="Kontakt.html">Kontakt</a>
-                </div>
-            </div>
-        </nav>
-    </header>
     <main>
         <div id="Kolobanov" class="pt-5 mt-5 container mb-3">
             <h1 class="text-center mb-5 display-2">KOLOBANOV</h1>
@@ -75,19 +46,7 @@
             </div>
         </div>
     </main>
-    <div class="text-center">
-        <h1 class="display-1 fw-bold mt-4">"</h1>
-        <p class="fst-italic form-control-lg">...Zamyslenie sa nad minulosťou môže slúžiť ako návod pre budúcnosť...</p>
-    </div>
-    <footer class="container-fluid pt-4 pb-2 text-center">
-        <p>
-            <b>Vytvoril:</b>
-            Viktor Kyrianov
-            <br>
-            <i>
-                © 2023
-            </i>
-        </p>
-    </footer>
-</body>
-</html>
+
+<?php
+include_once "_inc/footer.php";
+?>

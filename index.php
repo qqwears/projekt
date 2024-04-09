@@ -1,5 +1,7 @@
 <?php
+include_once "_inc/header.php";
 ?>
+
     <div id="fight">
         <div class="card text-bg-dark rounded-0 z-n1">
             <img src="img/bg.webp" class="card-img" alt="fight">
@@ -21,7 +23,7 @@
               <div class="col-8">
                 <article class="card-body">
                   <h5 class="card-title">
-                    <a href="Kolobanov.html" class="stretched-link">Kolobanov a KV-1</a>
+                    <a href="Kolobanov.php" class="stretched-link">Kolobanov a KV-1</a>
                   </h5>
                   <p class="card-text">
                     Kolobanov dostal rozkaz na obranu...
@@ -46,7 +48,7 @@
               <div class="col-8">
                 <article class="card-body">
                   <h5 class="card-title">
-                    <a href="Tiger.html" class="stretched-link">Posledný Tiger</a>
+                    <a href="Tiger.php" class="stretched-link">Posledný Tiger</a>
                   </h5>
                   <p class="card-text">
                     Kráľovský Tiger bol vrcholom nemeckého...
@@ -71,7 +73,7 @@
               <div class="col-8">
                 <article class="card-body">
                   <h5 class="card-title">
-                    <a href="Berlin.html" class="stretched-link">Bitka pri Berlíne</a>
+                    <a href="Berlin.php" class="stretched-link">Bitka pri Berlíne</a>
                   </h5>
                   <p class="card-text">
                     Berlín
@@ -127,20 +129,6 @@
       </div>
     </div>
 
-    <div class="text-center">
-        <h1 class="display-1 fw-bold mt-4">"</h1>
-        <p class="fst-italic form-control-lg">...Zamyslenie sa nad minulosťou môže slúžiť ako návod pre budúcnosť...</p>
-    </div>
-    <footer class="container-fluid pt-4 pb-2 text-center">
-        <p>
-            <b>Vytvoril:</b>
-            Viktor Kyrianov
-            <br>
-            <i>
-                © 2023
-            </i>
-        </p>
-    </footer>
-    <script src="js/app.js"></script>
-</body>
-</html>
+<?php
+include_once "_inc/footer.php";
+?>

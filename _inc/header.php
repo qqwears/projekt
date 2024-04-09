@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid fixed-top bg-black">
-              <a class="navbar-brand text-white d-flex flex-row align-items-center gap-2" href="Home.html">
+              <a class="navbar-brand text-white d-flex flex-row align-items-center gap-2" href="index.php">
                 <img src="img/logo.png" alt="Logo" width="50">
                 História vtedy a teraz
               </a>
@@ -23,9 +23,9 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav initialism gap-4 align-items-center justify-content-center d-flex container-fluid">
-                  <a class="nav-link active text-white p-3" aria-current="page" href="Home.html">Home</a>
-                  <a class="nav-link active text-white p-3" aria-current="page" href="O_nas.html">O nás</a>
-                  <a class="nav-link active text-white p-3" aria-current="page" href="Kontakt.html">Kontakt</a>
+                  <a class="nav-link active text-white p-3" aria-current="page" href="index.php">Home</a>
+                  <a class="nav-link active text-white p-3" aria-current="page" href="O_nas.php">O nás</a>
+                  <a class="nav-link active text-white p-3" aria-current="page" href="Kontakt.php">Kontakt</a>
                 </div>
             </div>
         </nav>
