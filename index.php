@@ -14,15 +14,14 @@ include_once "_inc/header.php";
 
 <div class="container py-4">
   <h2 class="my-4">Úžasné príbehy</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <?php
+    $article_object = new Article();
+    $articles = $article_object->getAll();
 
-  <?php
-  $article_object = new Article();
-  $articles = $article_object->getAll();
-
-  for ($i = 0; $i < count($articles); $i++) {
-    $article = $articles[$i];
-  ?>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    for ($i = 0; $i < count($articles); $i++) {
+      $article = $articles[$i];
+    ?>
       <div class="col">
         <div class="card h-100">
           <div class="row g-0">
@@ -35,7 +34,7 @@ include_once "_inc/header.php";
                 <p class="card-text">
                   <?php
                   $text = $article["text"];
-                  $short = substr($text, 0, 25);
+                  $short = substr($text, 0, 30);
                   echo $short . "...";
                   ?>
                 </p>
@@ -51,61 +50,9 @@ include_once "_inc/header.php";
         </div>
       </div>
     <?php
-  }
+    }
     ?>
-
-    <!--
-        <div class="col">
-          <div class="card h-100">
-            <div class="row g-0">
-              <img src="img/lasttank.jpeg" class="card-img-top" alt="Tiger">
-
-              <div class="col-8">
-                <article class="card-body">
-                  <h5 class="card-title">
-                    <a href="Tiger.php" class="stretched-link">Posledný Tiger</a>
-                  </h5>
-                  <p class="card-text">
-                    Kráľovský Tiger bol vrcholom nemeckého...
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary d-flex flex-column gap-1">
-                      <span><b>Dátum:</b> 1. mája 1945</span>
-                      <span><b>Miesto:</b> Berlín</span>
-                    </small>
-                  </p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <div class="row g-0">
-              <img src="img/warberlin.jpeg" class="card-img-top" alt="Berlín">
-
-              <div class="col-8">
-                <article class="card-body">
-                  <h5 class="card-title">
-                    <a href="Berlin.php" class="stretched-link">Bitka pri Berlíne</a>
-                  </h5>
-                  <p class="card-text">
-                    Berlín
-                  </p>
-                  <p class="card-text">
-                    <small class="text-body-secondary d-flex flex-column gap-1">
-                      <span><b>Dátum:</b> 16. apríla 1945</span>
-                      <span><b>Miesto:</b> Berlin</span>
-                    </small>
-                  </p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
--->
-    </div>
+  </div>
 </div>
 
 <video class="w-100" controls id="video">
