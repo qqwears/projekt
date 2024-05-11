@@ -12,6 +12,8 @@ define("DATABASE", array(
 ));
 
 require_once "classes/Database.php";
+
 require_once "classes/Contact.php";
+require_once "classes/Article.php";
 
 session_start();
