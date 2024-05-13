@@ -28,9 +28,21 @@ require_once "config.php";
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav initialism gap-4 align-items-center justify-content-center d-flex container-fluid">
-          <a class="nav-link active text-white p-3" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active text-white p-3" aria-current="page" href="index.php">Domov</a>
           <a class="nav-link active text-white p-3" aria-current="page" href="O_nas.php">O nás</a>
           <a class="nav-link active text-white p-3" aria-current="page" href="Kontakt.php">Kontakt</a>
+
+          <?php
+          if (isset($_SESSION["username"])) {
+          ?>
+            <a class="nav-link active text-white p-3" aria-current="page" href="Odhlasit.php">Odhlásiť</a>
+          <?php
+          } else {
+          ?>
+            <a class="nav-link active text-white p-3" aria-current="page" href="Prihlasenie.php">Prihlásiť</a>
+          <?php
+          }
+          ?>
         </div>
       </div>
   </nav>

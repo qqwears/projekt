@@ -53,6 +53,14 @@ include_once "_inc/header.php";
     }
     ?>
   </div>
+
+  <?php
+  if (isset($_SESSION["username"])) {
+  ?>
+    <a href="Novy_clanok.php" class="mt-4 btn btn-primary">Vytvoriť nový článok</a>
+  <?php
+  }
+  ?>
 </div>
 
 <video class="w-100" controls id="video">

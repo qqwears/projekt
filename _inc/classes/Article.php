@@ -1,14 +1,17 @@
 <?php
 
-class Article extends Database {
-    public function create($data) {
-        $query = "INSERT INTO article (title, date, place, text, img) VALUES (?, ?, ?, ?, ?);";
+class Article extends Database
+{
+    public function create($data)
+    {
+        $query = "INSERT INTO article (title, place, text, img) VALUES (?, ?, ?, ?);";
         $prepared = $this->instance->prepare($query);
 
         return $prepared->execute($data);
     }
 
-    public function getOne($id) {
+    public function getOne($id)
+    {
         $query = "SELECT * FROM article WHERE id = ?;";
         $prepared = $this->instance->prepare($query);
 
@@ -16,26 +19,28 @@ class Article extends Database {
         return $prepared->fetch();
     }
 
-    public function getAll() {
+    public function getAll()
+    {
         $query = "SELECT * FROM article;";
-        $prepared = $this->instance->prepare($query);
+        $prepared = $this->instance->prepare($query); // prevent sql injection
 
-        $prepared->execute();
-        $articles = $prepared->fetchAll();
+        $prepared->execute(); // executes sql
+        $articles = $prepared->fetchAll(); // fetches the result
 
         return $articles;
     }
 
-    public function update($id, $data) {
-        $query = "UPDATE article SET title = :title, place = :place, text = :text WHERE id = :id";
+    public function update($id, $data)
+    {
+        $query = "UPDATE article SET title = :title, place = :place, text = :text WHERE id = :id;";
         $prepared = $this->instance->prepare($query);
-
         $data["id"] = $id;
         return $prepared->execute($data);
     }
 
-    public function delete($id) {
-        $query = "DELETE FROM article WHERE id = ?";
+    public function delete($id)
+    {
+        $query = "DELETE FROM article WHERE id = ?;";
         $prepared = $this->instance->prepare($query);
 
         $data = array($id);
